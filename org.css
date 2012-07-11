@@ -1,0 +1,70 @@
+
+*[class^="section-number-"] {
+  display: none;
+}
+div[class^="outline-"] {
+  margin-left: 30px;
+}
+div.outline-2 {
+  margin-left: 0;
+}
+
+#postamble {
+  margin: 20px 0 0 0;
+  padding: 10px 20px;
+  line-height: 14px;
+  font-size: 12px;
+  border-top: solid 1px #CCC;
+}
+#postamble a,
+#postamble p {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/*
+  table formattingf
+  */
+table {
+  margin: 30px 0;
+}
+table,
+table thead {
+  border-top: none;
+}
+table tbody tr:nth-child(odd) {
+  background-color: #F7F7F7;
+}
+
+pre.example {
+  padding: 20px 20px 5px;
+}
+
+pre.src {
+  color: #00c120;
+  padding: 12px 16px 12px;
+  font-size: 11px;
+  font-weight: bold;
+  font-family: monaco;
+  border: solid 2px #000;
+  background-color: #222;
+}
+
+/* .src-php */
+.src-php span[style="color: #cdcd00;"] {
+  color: #b6b72e !important;
+}
+.src-php span[style="color: #00cd00;"] {
+  color: #BBB !important;
+}
+
+/* .src-html */
+.src-html span[style="color: #0000ee; font-weight: bold;"] {
+  color: #6474e6 !important;
+}
+.src-html span[style="color: #cdcd00;"] {
+  color: #b6b72e !important;
+  font-weight: bold;
+}

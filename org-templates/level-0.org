@@ -1,0 +1,2 @@
+#+bind: org-export-publishing-directory "~/src/docs/"
+#+style: <link rel="stylesheet" type="text/css" href="css/org.css" />
