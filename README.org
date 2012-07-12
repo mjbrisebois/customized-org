@@ -1,0 +1,27 @@
+#+style: <link rel="stylesheet" type="text/css" href="org.css" />
+
+* What to do
+  To use these configurations properly it is important to leave all the files in
+  the folder that holds the git repository. In order to use the files elsewhere
+  you must create symbolic links.
+  
+  #+begin_src bash
+      $ ln -s {target_file} {symbolic_file}
+  #+end_src
+  
+* Where should the symbolic links go
+  Some of the files need to be placed in specific folders in order to work properly.
+
+** org-templates
+   This folder must be in the =~/.emacs.d/=
+
+   #+begin_src bash
+       $ ln -s ~/.emacs.d/org-templates ~/src/customized-org/org-templates
+   #+end_src
+
+* How to find and rename symbolic links
+  This is the code to find a file by it's symbolic link.
+
+  #+begin_src bash
+      $ find / -lname ~/src/customized-org/{symbolic_link} 2>/dev/null
+  #+end_src
