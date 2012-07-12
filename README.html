@@ -1,13 +1,13 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="iso-8859-1"?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
                "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
 <title>README</title>
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1"/>
 <meta name="title" content="README"/>
 <meta name="generator" content="Org-mode"/>
-<meta name="generated" content="2012-07-11 13:16:10 MDT"/>
+<meta name="generated" content="2012-07-12 08:58:46 MDT"/>
 <meta name="author" content="Matthew Brisebois"/>
 <meta name="description" content=""/>
 <meta name="keywords" content=""/>
@@ -125,6 +125,10 @@
 </pre>
 
 
+<pre class="example">$ ln -s {target_file} {symbolic_file}
+</pre>
+
+
 </div>
 
 </div>
@@ -160,13 +164,20 @@
 <h2 id="sec-3"><span class="section-number-2">3</span> How to find and rename symbolic links</h2>
 <div class="outline-text-2" id="text-3">
 
+<p>  This is the code to find a file by it's symbolic link.
+</p>
+
+
+
+<pre class="src src-bash">$ find / -lname ~/src/customized-org/{symbolic_link} 2&gt;/dev/null
+</pre>
 
 </div>
 </div>
 </div>
 
 <div id="postamble">
-<p class="date">Date: 2012-07-11 13:16:10 MDT</p>
+<p class="date">Date: 2012-07-12 08:58:46 MDT</p>
 <p class="author">Author: Matthew Brisebois</p>
 <p class="creator">Org version 7.8.03 with Emacs version 24</p>
 <a href="http://validator.w3.org/check?uri=referer">Validate XHTML 1.0</a>
