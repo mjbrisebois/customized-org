@@ -11,6 +11,8 @@
   #+begin_example
       $ ln -s {target_file} {symbolic_file}
   #+end_example
+
+	$ ln -s {target_file} {symbolic_file}
   
 * Where should the symbolic links go
   Some of the files need to be placed in specific folders in order to work properly.
