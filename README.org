@@ -5,9 +5,7 @@
   the folder that holds the git repository. In order to use the files elsewhere
   you must create symbolic links.
 
-  #+begin_src bash
-      : $ ln -s {target_file} {symbolic_file}
-  #+end_src
+  : $ ln -s {target_file} {symbolic_file}
   
 * Where should the symbolic links go
   Some of the files need to be placed in specific folders in order to work properly.
@@ -15,13 +13,9 @@
 ** org-templates
    This folder must be in the =~/.emacs.d/=
 
-   #+begin_src bash
-       $ ln -s ~/.emacs.d/org-templates ~/src/customized-org/org-templates
-   #+end_src
+   : $ ln -s ~/.emacs.d/org-templates ~/src/customized-org/org-templates
 
 * How to find and rename symbolic links
   This is the code to find a file by it's symbolic link.
 
-  #+begin_src bash
-      $ find / -lname ~/src/customized-org/{symbolic_link} 2>/dev/null
-  #+end_src
+  : $ find / -lname ~/src/customized-org/{symbolic_link} 2>/dev/null
